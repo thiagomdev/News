@@ -1,2 +1,2 @@
 # News
-Aplicativo de notícias.
+Aplicativo de notícias processo seletivo TV Globo.
