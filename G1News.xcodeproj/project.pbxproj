@@ -120,30 +120,11 @@
 		AA65089E296D870400F72C84 /* G1News */ = {
 			isa = PBXGroup;
 			children = (
-				AA6508B3296D876900F72C84 /* Core */,
-				AAC2037B297190CF0061A10D /* Shared */,
-				AA6508B6296D878100F72C84 /* Features */,
+				AAD1BA5429970BF80016134E /* Feature */,
+				AAD1BA5229970BD40016134E /* Start */,
+				AAD1BA5329970BDF0016134E /* SupportingFiles */,
 			);
 			path = G1News;
-			sourceTree = "<group>";
-		};
-		AA6508B3296D876900F72C84 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				AA65089F296D870400F72C84 /* AppDelegate.swift */,
-				AA6508A8296D870700F72C84 /* Assets.xcassets */,
-				AA6508AA296D870700F72C84 /* LaunchScreen.storyboard */,
-				AA6508AD296D870700F72C84 /* Info.plist */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		AA6508B6296D878100F72C84 /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				AACB86CD296DADB600F3FFB0 /* Home */,
-			);
-			name = Features;
 			sourceTree = "<group>";
 		};
 		AAA6A56529743766009BD690 /* G1NewsTests */ = {
@@ -167,20 +148,23 @@
 		AAC2032729708A480061A10D /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				AACEC9DE296E1BE2001F4B47 /* ViewModel.swift */,
-				AA6508A3296D870400F72C84 /* FeedViewController.swift */,
-				AACEC9D8296DC2E1001F4B47 /* FeedTableViewCell */,
+				AAD1BA5A29970CC90016134E /* Domain */,
+				AAD1BA5929970CC70016134E /* Service */,
+				AAD1BA5829970CC40016134E /* Presentation */,
+				AAD1BA5729970CC10016134E /* UI */,
 			);
 			name = Feed;
 			sourceTree = "<group>";
 		};
-		AAC203282970AE8E0061A10D /* Settings */ = {
+		AAC203282970AE8E0061A10D /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				AAC2032D2970B5830061A10D /* SettingViewModel.swift */,
-				AAC203292970AEC50061A10D /* SettingViewController.swift */,
+				AAD1BA5E29970D490016134E /* Domain */,
+				AAD1BA5D29970D470016134E /* Service */,
+				AAD1BA5C29970D430016134E /* Presentation */,
+				AAD1BA5B29970D400016134E /* UI */,
 			);
-			name = Settings;
+			name = Setting;
 			sourceTree = "<group>";
 		};
 		AAC2037B297190CF0061A10D /* Shared */ = {
@@ -194,18 +178,88 @@
 			name = Shared;
 			sourceTree = "<group>";
 		};
-		AACB86CD296DADB600F3FFB0 /* Home */ = {
+		AACEC9DB296E1554001F4B47 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				AA2B40C629801097003DFB83 /* HTTPMethod.swift */,
+				AA8C17E4297F2AA3008C8FA0 /* Networking.swift */,
+				AA2B40C8298010F5003DFB83 /* RequestAPI.swift */,
+			);
+			name = WebService;
+			sourceTree = "<group>";
+		};
+		AAD1BA5229970BD40016134E /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				AA65089F296D870400F72C84 /* AppDelegate.swift */,
+			);
+			name = Start;
+			sourceTree = "<group>";
+		};
+		AAD1BA5329970BDF0016134E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AA6508A8296D870700F72C84 /* Assets.xcassets */,
+				AA6508AA296D870700F72C84 /* LaunchScreen.storyboard */,
+				AA6508AD296D870700F72C84 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AAD1BA5429970BF80016134E /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				AAD1BA5529970C1A0016134E /* Core */,
+				AAC2037B297190CF0061A10D /* Shared */,
+				AAD1BA5629970C200016134E /* Scene */,
+			);
+			name = Feature;
+			sourceTree = "<group>";
+		};
+		AAD1BA5529970C1A0016134E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AACEC9DB296E1554001F4B47 /* WebService */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		AAD1BA5629970C200016134E /* Scene */ = {
 			isa = PBXGroup;
 			children = (
 				AAC2032729708A480061A10D /* Feed */,
-				AAC203282970AE8E0061A10D /* Settings */,
-				AACB86CE296DADC200F3FFB0 /* Models */,
-				AACEC9DB296E1554001F4B47 /* Service */,
+				AAC203282970AE8E0061A10D /* Setting */,
 			);
-			name = Home;
+			name = Scene;
 			sourceTree = "<group>";
 		};
-		AACB86CE296DADC200F3FFB0 /* Models */ = {
+		AAD1BA5729970CC10016134E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AA6508A3296D870400F72C84 /* FeedViewController.swift */,
+				AAC2031B2970782E0061A10D /* FeedItemCellViewModel.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		AAD1BA5829970CC40016134E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AACEC9DE296E1BE2001F4B47 /* ViewModel.swift */,
+				AACEC9D6296DBF5C001F4B47 /* FeedTableViewCell.swift */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		AAD1BA5929970CC70016134E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AACEC9DC296E1576001F4B47 /* FeedNewsService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		AAD1BA5A29970CC90016134E /* Domain */ = {
 			isa = PBXGroup;
 			children = (
 				AACB86D7296DAE8500F3FFB0 /* Content.swift */,
@@ -213,27 +267,37 @@
 				AACB86D3296DAE3900F3FFB0 /* Item.swift */,
 				AACB86D1296DAE1100F3FFB0 /* FeedResponse.swift */,
 			);
-			name = Models;
+			name = Domain;
 			sourceTree = "<group>";
 		};
-		AACEC9D8296DC2E1001F4B47 /* FeedTableViewCell */ = {
+		AAD1BA5B29970D400016134E /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				AACEC9D6296DBF5C001F4B47 /* FeedTableViewCell.swift */,
-				AAC2031B2970782E0061A10D /* FeedItemCellViewModel.swift */,
+				AAC203292970AEC50061A10D /* SettingViewController.swift */,
 			);
-			name = FeedTableViewCell;
+			name = UI;
 			sourceTree = "<group>";
 		};
-		AACEC9DB296E1554001F4B47 /* Service */ = {
+		AAD1BA5C29970D430016134E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				AACEC9DC296E1576001F4B47 /* FeedNewsService.swift */,
-				AA2B40C629801097003DFB83 /* HTTPMethod.swift */,
-				AA8C17E4297F2AA3008C8FA0 /* Networking.swift */,
-				AA2B40C8298010F5003DFB83 /* RequestAPI.swift */,
+				AAC2032D2970B5830061A10D /* SettingViewModel.swift */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		AAD1BA5D29970D470016134E /* Service */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Service;
+			sourceTree = "<group>";
+		};
+		AAD1BA5E29970D490016134E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Domain;
 			sourceTree = "<group>";
 		};
 		AAED4F612974CFF60035595C /* FeedItemCellViewModelTests */ = {
